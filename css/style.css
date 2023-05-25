@@ -87,6 +87,7 @@ a:focus,
 	display: inline-block;
 	text-align: center;
 	line-height: 53px;
+	transition: all 0.2s linear;
 }
 
 .btn-blue:hover {
@@ -197,7 +198,104 @@ a:focus,
 
 /* main-sec end */
 
+/* modal-sec start */
+.modal .modal-dialog {
+	max-width: 900px !important;
+}
 
+.modal .btn-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.modal .modal-content {
+	left: 50%;
+	transform: translateX(-50%);
+	background: #18394E;
+	border: 2px solid #21BBD7;
+	box-shadow: 82px 41px 37px rgba(33, 187, 215, 0.03), 46px 23px 31px rgba(33, 187, 215, 0.1), 21px 10px 23px rgba(33, 187, 215, 0.17), 5px 3px 13px rgba(33, 187, 215, 0.2), 0px 0px 0px rgba(33, 187, 215, 0.2);
+	border-radius: 20px;
+	padding: 50px 85px;
+	text-align: center;
+}
+
+.modal .modal-content .modal-title {
+	font-family: 'GothamPro';
+	font-size: 36px;
+	line-height: 110%;
+	color: #21BBD7;
+	display: inline-block;
+	padding-bottom: 70px;
+}
+
+.modal .registration-box {
+	padding-top: 70px;
+	gap: 20px;
+}
+
+.modal .registration-box span {
+	font-family: 'GothamPro';
+	font-size: 22px;
+	line-height: 110%;
+	color: #F9FDFF;
+}
+
+.modal .registration-box button {
+	font-family: 'GothamPro';
+	font-size: 22px;
+	line-height: 110%;
+	color: #21BBD7;
+	border: none;
+	background: none;
+	position: relative;
+	padding: 0;
+}
+.modal .registration-box button::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	border: 1px solid #21BBD7;
+}
+
+.modal .modal-body input {
+	background: #F9FDFF;
+	border: 1px solid #21BBD7;
+	border-radius: 20px;
+	padding: 13px 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'GothamPro';
+	font-size: 30px;
+	line-height: 110%;
+	color: #9FAFB8;
+}
+
+.modal .modal-body input:nth-child(1) {
+	margin-bottom: 50px;
+}
+
+.modal .modal-body .forget-password {
+	font-family: 'GothamPro';
+	font-size: 22px;
+	line-height: 110%;
+	text-decoration-line: underline;
+	color: #21BBD7;
+	background: none;
+	border: none;
+	width: 100%;
+	text-align: right;
+	margin: 10px 0 66px;
+}
+#exampleModal2 .submit-btn{
+	margin-top: 100px;
+}
+/* modal-sec end */
 
 
 
@@ -265,16 +363,19 @@ a:focus,
 		height: 50px;
 	}
 }
+
 @media (max-width: 500px) {
-	.main-sec .main-sec__info{
+	.main-sec .main-sec__info {
 		padding: 60px 0 150px 0;
 	}
-	.btn-blue{
+
+	.btn-blue {
 		font-size: 12px;
 		height: 40px;
 		line-height: 40px;
 	}
-	.main-sec .main-sec__info .btn-blue{
+
+	.main-sec .main-sec__info .btn-blue {
 		padding: 0 28px;
 	}
 }

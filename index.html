@@ -78,7 +78,8 @@
 									</li>
 								</ul>
 								<form class="d-flex align-items-center header-form__icons">
-									<svg width="26" height="26" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg data-bs-toggle="modal" data-bs-target="#exampleModal" width="26" height="26" viewBox="0 0 26 27"
+										fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M4.33337 22.8141V21.7278C4.33337 18.1278 7.24352 15.2094 10.8334 15.2094H15.1667C18.7565 15.2094 21.6667 18.1278 21.6667 21.7278V22.8141"
 											stroke="#F9FDFF" stroke-width="2" stroke-linecap="round" />
@@ -100,12 +101,68 @@
 					<div class="main-sec__info">
 						<h2 class="main-sec__info-title">Интеллектуальные системы</h2>
 						<p class="main-sec__info-paragrph">Комплексная автоматизация технологических процессов
-						на промышленных предприятиях</p>
+							на промышленных предприятиях</p>
 						<a class="btn-blue" href="#!">Узнать больше</a>
 					</div>
 				</div>
 			</section>
 		</main>
+
+		<!-- modal sec start -->
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<svg class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close" width="24" height="25"
+						viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M13.3259 12.5001L23.7255 2.10047C24.0915 1.73432 24.0915 1.1407 23.7255 0.774605C23.3593 0.408512 22.7657 0.408465 22.3996 0.774605L12 11.1742L1.60047 0.774605C1.23433 0.408465 0.640698 0.408465 0.274606 0.774605C-0.0914884 1.14075 -0.0915354 1.73437 0.274606 2.10047L10.6741 12.5L0.274606 22.8996C-0.0915354 23.2658 -0.0915354 23.8594 0.274606 24.2255C0.457652 24.4085 0.697605 24.5 0.93756 24.5C1.17751 24.5 1.41742 24.4085 1.60051 24.2255L12 13.8259L22.3996 24.2255C22.5826 24.4085 22.8226 24.5 23.0625 24.5C23.3025 24.5 23.5424 24.4085 23.7255 24.2255C24.0915 23.8594 24.0915 23.2657 23.7255 22.8996L13.3259 12.5001Z"
+							fill="#21BBD7" />
+					</svg>
+					<div class="modal-body p-0">
+						<h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+						<form>
+							<input type="email" name="email" placeholder="Введите  E-mail">
+							<input type="password" name="password" placeholder="Введите пароль">
+							<button class="forget-password" data-bs-toggle="modal" data-bs-target="#exampleModal2">Забыли
+								пароль?</button>
+							<button type="submit" class="btn-blue w-100">Войти</button>
+							<div class="d-flex registration-box justify-content-center align-items-center">
+								<span>Нет учетной записи?</span>
+								<button type="button">Зарегистрироваться</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<svg class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close" width="24" height="25"
+						viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M13.3259 12.5001L23.7255 2.10047C24.0915 1.73432 24.0915 1.1407 23.7255 0.774605C23.3593 0.408512 22.7657 0.408465 22.3996 0.774605L12 11.1742L1.60047 0.774605C1.23433 0.408465 0.640698 0.408465 0.274606 0.774605C-0.0914884 1.14075 -0.0915354 1.73437 0.274606 2.10047L10.6741 12.5L0.274606 22.8996C-0.0915354 23.2658 -0.0915354 23.8594 0.274606 24.2255C0.457652 24.4085 0.697605 24.5 0.93756 24.5C1.17751 24.5 1.41742 24.4085 1.60051 24.2255L12 13.8259L22.3996 24.2255C22.5826 24.4085 22.8226 24.5 23.0625 24.5C23.3025 24.5 23.5424 24.4085 23.7255 24.2255C24.0915 23.8594 24.0915 23.2657 23.7255 22.8996L13.3259 12.5001Z"
+							fill="#21BBD7" />
+					</svg>
+					<div class="modal-body p-0">
+						<h5 class="modal-title" id="exampleModalLabel">Восстановление пароля</h5>
+						<form>
+							<input type="email" name="email" placeholder="Введите  E-mail">
+							<input type="email" name="email" placeholder="Повторите E-mail">
+							<button type="submit" class="submit-btn btn-blue w-100">Отправить пароль на почту</button>
+							<div class="d-flex registration-box justify-content-center align-items-center">
+								<span>Нет учетной записи?</span>
+								<button type="button">Зарегистрироваться</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal sec end -->
 
 		<footer class="footer">
 			<div class="container">
