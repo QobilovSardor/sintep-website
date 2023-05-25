@@ -253,7 +253,8 @@ a:focus,
 	position: relative;
 	padding: 0;
 }
-.modal .registration-box button::before{
+
+.modal .registration-box button::before {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -290,11 +291,13 @@ a:focus,
 	border: none;
 	width: 100%;
 	text-align: right;
-	margin: 10px 0 66px;
+	margin: 10px 0 66px 0;
 }
-#exampleModal2 .submit-btn{
+
+#exampleModal2 .submit-btn {
 	margin-top: 100px;
 }
+
 /* modal-sec end */
 
 
@@ -362,6 +365,42 @@ a:focus,
 	.header .navbar-brand>svg {
 		height: 50px;
 	}
+
+	.modal .modal-content {
+		padding: 30px;
+	}
+
+	.modal .modal-body input {
+		font-size: 20px;
+	}
+
+	.modal .modal-body input:nth-child(1) {
+		margin-bottom: 30px;
+	}
+
+	.modal .modal-body .forget-password {
+		font-size: 18px;
+		margin: 10px 0 40px 0;
+	}
+
+	.modal .modal-content .modal-title {
+		padding-bottom: 30px;
+		font-size: 30px;
+	}
+
+	.modal .modal-dialog {
+		max-width: 100%;
+	}
+
+	.modal .registration-box {
+		padding-top: 40px;
+		flex-wrap: wrap;
+	}
+
+	.modal .registration-box span,
+	.modal .registration-box button {
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -377,5 +416,9 @@ a:focus,
 
 	.main-sec .main-sec__info .btn-blue {
 		padding: 0 28px;
+	}
+
+	.modal .modal-body input {
+		font-size: 18px;
 	}
 }
