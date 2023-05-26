@@ -433,6 +433,50 @@ a:focus,
 	margin-bottom: 50px;
 }
 
+.our-bg {
+	background: url('../images/globus.png');
+	background-position: top center;
+	background-size: 100% 100%;
+	position: relative;
+	padding: 90px 0;
+	margin-bottom: 100px;
+}
+
+.our-bg .row {
+	z-index: 2;
+	position: relative;
+}
+
+.our-bg::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 57, 78, 0.6);
+	z-index: 1;
+}
+
+.out-bg__title {
+	font-family: 'GothamPro';
+	font-size: 130px;
+	line-height: 110%;
+	-webkit-text-stroke: 2px #21BBD7;
+	background: url('../images/globus.png');
+	background-position: bottom;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.our-bg__info {
+	font-family: 'GothamPro-Bold';
+	font-size: 20px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #F9FDFF;
+}
+
 .our-services .our-services__box-img img {
 	border-radius: 20px;
 }
@@ -1114,18 +1158,18 @@ a:focus,
 }
 
 .permission__card-text p {
-	font-family: 'GothamPro';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 22px;
 	line-height: 120%;
 	color: #F9FDFF;
 	width: 176px;
-	height: 50.35px;
 }
 
 .card-main {
 	text-align: center;
+}
+
+.permission__card-img {
+	width: 100%;
 }
 
 .permission__card-text {
@@ -2126,4 +2170,24 @@ a:focus,
 		width: 100%;
 		margin: 0 auto;
 	}
+
+	.permission__card-text p {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.permission__card-text p {
+		font-size: 18px;
+	}
+		.out-bg__title{
+			font-size: 90px;
+		}
+				.our-bg{
+					margin: 40px 0;
+					padding: 40px 0;
+					background-size: cover;
+				}
+		.our-bg .row{
+			gap: 20px;
+		}
 }
