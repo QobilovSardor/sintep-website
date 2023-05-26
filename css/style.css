@@ -630,13 +630,107 @@ a:focus,
 /* about-us__two end */
 
 /* services-sec start */
-.services-sec .btn-blue{
+.services-sec .btn-blue {
 	padding: 0 64px;
 	margin: 50px 0;
 }
+
 /* services-sec end */
 
+/* spheres start */
+.spheres-sec .title {
+	margin-bottom: 50px;
+}
 
+.accordion-body {
+	background: #000 !important;
+}
+
+.spheres-sec .accordion-flush .accordion-item .accordion-button {
+	background: #18394E;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+}
+
+.spheres-sec .accordion-header {
+	background: #18394E;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	padding: 27px 35px 27px 70px;
+	font-family: 'GothamPro-Bold';
+	font-size: 30px;
+	line-height: 120%;
+	color: #F9FDFF;
+}
+.spheres-sec .accordion-box{
+	margin-bottom: 20px;
+}
+.spheres-sec .accordion-box:nth-last-child(){
+	margin-bottom: -100px;
+}
+.spheres-sec .accordion-header img {
+	transition: all 0.3s linear;
+}
+
+.spheres-sec .accordion-header img.active {
+	transform: rotate(180deg);
+}
+
+.spheres-sec .accordion-header.active {
+	background: linear-gradient(145.43deg, #0A214D 19.7%, #052955 33.52%, #00325E 47.34%, #003A65 61.16%, #00436D 74.97%, #004B74 88.79%, #00547B 102.61%, #005D81 116.43%, #006587 130.24%, #006E8D 144.06%, #0C7792 157.88%, #1B8097 171.7%);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px 20px 0px 0px;
+}
+
+.spheres-sec .accordion-content {
+	background: linear-gradient(145.43deg, #0A214D 19.7%, #052955 33.52%, #00325E 47.34%, #003A65 61.16%, #00436D 74.97%, #004B74 88.79%, #00547B 102.61%, #005D81 116.43%, #006587 130.24%, #006E8D 144.06%, #0C7792 157.88%, #1B8097 171.7%);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.spheres-sec .accordion-content {
+	padding: 50px 70px;
+	margin-bottom: 15px;
+}
+
+.spheres-sec .accordion-content img {
+	width: 100%;
+	padding: 20px 0 60px 0;
+	margin-left: -10px;
+}
+
+.spheres-sec .accordion-content h3 {
+	font-family: 'GothamPro-Bold';
+	font-size: 22px;
+	line-height: 110%;
+	margin-bottom: 20px;
+	color: #F9FDFF;
+}
+
+.spheres-sec .accordion-content p {
+	font-size: 22px;
+	line-height: 110%;
+	color: #F9FDFF;
+	margin-left: 20px;
+	position: relative;
+	padding-top: 20px;
+}
+
+.spheres-sec .accordion-content p::before {
+	content: "";
+	position: absolute;
+	top: 70%;
+	left: -20px;
+	width: 6px;
+	height: 6px;
+	transform: translateY(-50%);
+	background: #21BBD7;
+	border-radius: 10px;
+}
+.spheres-sec .mt-70{
+	margin-top: 70px;
+}
+/* spheres edn */
 
 
 
