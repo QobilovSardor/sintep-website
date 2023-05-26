@@ -1264,4 +1264,55 @@ a:focus,
 	.footer .footer-bottom {
 		margin-top: 20px;
 	}
+
+	.page-links {
+		margin: 30px 0 0 0;
+	}
+
+	.title .title-text {
+		font-size: 30px;
+	}
+
+	.about-us__two .title+p {
+		margin: 20px 0 30px 0;
+		font-size: 18px;
+	}
+
+	.page-links .page-link {
+		font-size: 18px;
+	}
+
+	.about-us__two .btn-blue {
+		width: 100%;
+	}
+
+	.pages-link__top a {
+		margin: 30px 0 40px 0;
+	}
+
+	.about-us__two .border-box p {
+		font-size: 18px;
+	}
+
+	.about-us__two-cards .col-lg-8,
+	.about-us__two-cards .col-lg-6,
+	.about-us__two-cards .col-lg-4,
+	.border-box {
+		margin-bottom: 20px;
+	}
+
+	.about-us__two .my-3 {
+		/* margin-bottom: 0 !important; */
+	}
+	.about-us__two .mt-80{
+		margin-top: 0 !important;
+	}
+
+	.about-us__two-cards {
+		margin-top: 70px;
+	}
+
+	.footer {
+		margin-top: 50px;
+	}
 }
