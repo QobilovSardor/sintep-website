@@ -995,7 +995,7 @@ a:focus,
 	position: absolute;
 	transform: translateY(-50%);
 	left: -20px;
-	top: 14px;
+	top: 50%;
 	width: 6px;
 	height: 6px;
 	background: #21BBD7;
@@ -1053,7 +1053,7 @@ a:focus,
 }
 
 .leading__wrap-your h3 {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
@@ -1063,7 +1063,7 @@ a:focus,
 }
 
 .leading__wrap-contakt span {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
@@ -1092,7 +1092,7 @@ a:focus,
 }
 
 .leading__wrap-tel span {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
@@ -1114,7 +1114,7 @@ a:focus,
 }
 
 .permission__card-text p {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
@@ -1153,7 +1153,7 @@ a:focus,
 	line-height: 140%;
 	letter-spacing: 0.01em;
 	color: #21BBD7;
-	margin: 50px 0 50px 0;
+	margin: 0 0 50px 0;
 }
 
 .compant__left-title h2 {
@@ -1234,9 +1234,6 @@ a:focus,
 
 
 /* Our history seris stayle */
-.our__wrap-section {
-	display: flex;
-}
 
 .our__left-title h1 {
 	font-family: 'GothamPro-Bold';
@@ -1264,12 +1261,12 @@ a:focus,
 }
 
 .our__section-right .page-links__line {
-	height: 183px;
+	height: 186px;
 }
 
 
 .our__customers-title h1 {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 30px;
@@ -1622,6 +1619,15 @@ a:focus,
 
 	.partners-sec .partners-card__info {
 		padding: 30px;
+	}
+
+	.our__cutomers-left {
+		width: fit-content;
+	}
+
+	.our__cutomers-left p {
+		font-size: 18px;
+		width: fit-content;
 	}
 }
 
@@ -2046,5 +2052,78 @@ a:focus,
 	.contact__company-all img {
 		width: 100%;
 		margin-top: 20px;
+	}
+
+	.leading .pages-link__top {
+		flex-direction: column;
+		margin: 30px 0 30px 0;
+	}
+
+	.leading .pages-link__top a {
+		margin: 0;
+	}
+
+	.leading .pages-link__top a.active-line::before {
+		display: none;
+	}
+
+	.leading__basic-title h2 {
+		font-size: 25px;
+	}
+
+	.leading__basic-text p,
+	.leading__requirements-text p {
+		font-size: 18px;
+		width: fit-content;
+	}
+
+	.leading__wrap-contakt h3,
+	.leading__wrap-tel h3 {
+		width: fit-content;
+		font-size: 20px;
+	}
+
+	.our__left-title h1 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	.our__left-text p {
+		width: auto;
+		height: auto;
+		font-size: 18px;
+	}
+
+	.our__customers-title h1 {
+		margin-top: 30px;
+	}
+
+	.our__cutomers-right p {
+		margin-left: 20px;
+	}
+
+	.our__cutomers-right p,
+	.our__cutomers-left p {
+		font-size: 16px;
+	}
+
+	.our__border {
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	.our__section-right .page-links__line {
+		height: 180px;
+	}
+
+	.our__customers-img img {
+		object-fit: cover;
+		height: 350px;
+		border-radius: 20px;
+	}
+
+	.our__wrap-box-all.row {
+		width: 100%;
+		margin: 0 auto;
 	}
 }
