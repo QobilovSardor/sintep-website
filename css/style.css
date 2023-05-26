@@ -180,7 +180,7 @@ a:focus,
 	gap: 17px;
 	width: 100%;
 	width: max-content;
-	margin: 0 0 0 auto;
+	margin: 50px 0 0 auto;
 	padding-right: 30px;
 	position: relative;
 }
@@ -629,7 +629,12 @@ a:focus,
 
 /* about-us__two end */
 
-
+/* services-sec start */
+.services-sec .btn-blue{
+	padding: 0 64px;
+	margin: 50px 0;
+}
+/* services-sec end */
 
 
 
