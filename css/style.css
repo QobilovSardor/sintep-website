@@ -110,6 +110,14 @@ a:focus,
 	color: #F9FDFF;
 }
 
+.title .title-text {
+	font-family: 'GothamPro-Bold';
+	font-size: 48px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	color: #21BBD7;
+}
+
 .title-sm {
 	display: inline-block;
 }
@@ -142,6 +150,50 @@ a:focus,
 	filter: blur(1px);
 }
 
+.pages-link__top {
+	display: flex;
+	gap: 34px;
+}
+
+.pages-link__top a {
+	position: relative;
+	font-size: 16px;
+	line-height: 15px;
+	color: #F9FDFF;
+	margin: 30px 0 50px 0;
+}
+
+.pages-link__top a.active-line::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+	width: 4px;
+	height: 4px;
+	background: #21BBD7;
+	border-radius: 10px;
+}
+.page-links{
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+	width: initial;
+}
+.page-links .page-link {
+	font-size: 20px;
+	line-height: 110%;
+	color: #F9FDFF;
+	background: #18394E;
+	border: 1px solid #21BBD7;
+	box-shadow: 82px 41px 37px rgba(33, 187, 215, 0.03), 46px 23px 31px rgba(33, 187, 215, 0.1), 21px 10px 23px rgba(33, 187, 215, 0.17), 5px 3px 13px rgba(33, 187, 215, 0.2), 0px 0px 0px rgba(33, 187, 215, 0.2);
+	border-radius: 20px;
+	display: inline-block;
+	padding: 0 34px;
+}
+.page-links .page-link:hover{
+	background: red;
+}
 /* main-sec start */
 .main-sec {
 	background-image: url(../images/main-bg.png);
@@ -484,6 +536,19 @@ a:focus,
 
 /* news end */
 
+/* about-us__two start */
+.about-us__two .title+p {
+	font-size: 22px;
+	line-height: 120%;
+	color: #F9FDFF;
+	margin: 55px 0 75px 0;
+}
+
+.about-us__two .btn-blue {
+	width: 374px;
+}
+
+/* about-us__two end */
 
 
 
@@ -599,9 +664,11 @@ a:focus,
 	justify-content: center;
 	margin-top: 70px;
 }
+
 .footer .footer-bottom ul {
 	gap: 120px;
 }
+
 .footer .footer-bottom a {
 	font-weight: 400;
 	font-size: 16px;
@@ -609,7 +676,8 @@ a:focus,
 	color: #F9FDFF;
 	display: inline-block;
 }
-.footer a:hover{
+
+.footer a:hover {
 	color: #21BBD7;
 }
 
