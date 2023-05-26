@@ -126,7 +126,6 @@ a:focus,
 	font-family: 'GothamPro-Bold';
 	font-size: 30px;
 	line-height: 120%;
-	text-align: center;
 	color: #21BBD7;
 }
 
@@ -186,6 +185,17 @@ a:focus,
 	position: relative;
 }
 
+.page-links .page-link.active {
+	font-family: 'GothamPro';
+	background: linear-gradient(145.43deg, #0A214D 19.7%, #052955 33.52%, #00325E 47.34%, #003A65 61.16%, #00436D 74.97%, #004B74 88.79%, #00547B 102.61%, #005D81 116.43%, #006587 130.24%, #006E8D 144.06%, #0C7792 157.88%, #1B8097 171.7%);
+	/* Лазурный */
+
+	border: 2px solid #21BBD7;
+	/* Тень */
+
+	box-shadow: 82px 41px 37px rgba(33, 187, 215, 0.03), 46px 23px 31px rgba(33, 187, 215, 0.1), 21px 10px 23px rgba(33, 187, 215, 0.17), 5px 3px 13px rgba(33, 187, 215, 0.2), 0px 0px 0px rgba(33, 187, 215, 0.2);
+}
+
 .page-links .page-link {
 	font-size: 20px;
 	line-height: 110%;
@@ -210,6 +220,7 @@ a:focus,
 	background: #21BBD7;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 100px #21BBD7, 0px 0px 50px rgba(33, 187, 215, 0.5), 0px 0px 25px rgba(33, 187, 215, 0.25), 0px 0px 4px rgba(33, 187, 215, 0.01), 0px 0px 4px rgba(33, 187, 215, 0.05), 0px 0px 4px rgba(33, 187, 215, 0.1);
 }
+
 /* .page-links .page-links__line-box:nth-child(1) {
 	top: -1px;
 }
@@ -229,6 +240,15 @@ a:focus,
 	background: #21BBD7;
 	filter: blur(1px);
 	z-index: 10;
+}
+
+.border-box {
+	border: 1px solid #21BBD7;
+	border-radius: 20px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /* main-sec start */
@@ -523,7 +543,7 @@ a:focus,
 
 /* news start */
 .news-sec {
-	padding: 137px 0 120px 0;
+	padding: 137px 0 0 0;
 }
 
 .news-sec .news-card__box {
@@ -581,8 +601,30 @@ a:focus,
 	margin: 55px 0 75px 0;
 }
 
+.about-us__two-cards {
+	margin-top: 120px;
+}
+
 .about-us__two .btn-blue {
 	width: 374px;
+}
+
+.about-us__two .border-box p {
+	font-size: 22px;
+	line-height: 110%;
+	color: #F9FDFF;
+}
+
+.about-us__two .card-img__box img {
+	height: 298px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
 }
 
 /* about-us__two end */
@@ -609,6 +651,7 @@ a:focus,
 	background-size: 100% 100%;
 	padding: 50px 0;
 	position: relative;
+	margin-top: 125px;
 }
 
 .footer .footer-top-line {
