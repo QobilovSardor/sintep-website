@@ -221,12 +221,6 @@ a:focus,
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 100px #21BBD7, 0px 0px 50px rgba(33, 187, 215, 0.5), 0px 0px 25px rgba(33, 187, 215, 0.25), 0px 0px 4px rgba(33, 187, 215, 0.01), 0px 0px 4px rgba(33, 187, 215, 0.05), 0px 0px 4px rgba(33, 187, 215, 0.1);
 }
 
-/* .page-links .page-links__line-box:nth-child(1) {
-	top: -1px;
-}
-.page-links .page-links__line-box:nth-child(1) {
-	top: -1px;
-} */
 .page-links .page-link::before {
 	content: "";
 	position: absolute;
@@ -772,15 +766,13 @@ a:focus,
 }
 
 .career__info-2 {
-	font-family: 'Gotham Pro';
-	font-weight: 700;
+	font-family: 'GothamPro';
 	font-size: 30px;
 	line-height: 120%;
 	color: #21BBD7;
 }
 
 .page-links {
-	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	gap: 17px;
@@ -788,7 +780,6 @@ a:focus,
 	width: max-content;
 	padding-right: 30px;
 	position: relative;
-	margin-left: 260px;
 	top: -40px;
 }
 
@@ -2010,7 +2001,23 @@ a:focus,
 	.card__inside-title h3 {
 		font-size: 18px;
 	}
-		.career__too-main{
-			margin-top: 0;
-		}
+
+	.career__too-main {
+		margin-top: 0;
+	}
+
+	.career__info-1 {
+		font-size: 20px;
+	}
+
+	.career__main-texts {
+		margin-top: 50px;
+	}
+
+	.career__left-info {
+		margin-bottom: 0;
+	}
+	.footer{
+		background-size: cover;
+	}
 }
