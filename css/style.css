@@ -1157,7 +1157,7 @@ a:focus,
 }
 
 .compant__left-title h2 {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 120%;
@@ -1177,7 +1177,7 @@ a:focus,
 }
 
 .located__left-title h2 {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 120%;
@@ -1195,7 +1195,7 @@ a:focus,
 }
 
 .contact__left-title h2 {
-	font-family: 'Gotham Pro';
+	font-family: 'GothamPro';
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 120%;
@@ -2017,7 +2017,34 @@ a:focus,
 	.career__left-info {
 		margin-bottom: 0;
 	}
-	.footer{
+
+	.footer {
 		background-size: cover;
+	}
+
+	.contact__company-all {
+		flex-direction: column;
+	}
+
+	.compant__left-text p,
+	.located__left-text p,
+	.contact__call,
+	.contact__left-email {
+		font-size: 18px;
+	}
+
+	.compant__left-title h2,
+	.located__left-title h2,
+	.contact__left-title h2 {
+		font-size: 22px;
+	}
+
+	.contact__wrap-company {
+		gap: 25px;
+	}
+
+	.contact__company-all img {
+		width: 100%;
+		margin-top: 20px;
 	}
 }
