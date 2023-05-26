@@ -1335,9 +1335,11 @@ a:focus,
 	.spheres-sec .accordion-content img {
 		padding: 0;
 	}
-.spheres-sec .accordion-content .mt-70{
-	margin-top: 30px;
-}
+
+	.spheres-sec .accordion-content .mt-70 {
+		margin-top: 30px;
+	}
+
 	.spheres-sec .accordion-content h3 {
 		font-size: 18px;
 		margin-bottom: 10px;
@@ -1346,8 +1348,17 @@ a:focus,
 	.spheres-sec .accordion-content p {
 		font-size: 16px;
 	}
-		.modal .btn-close{
-			top: 10px;
-			right: 10px;
-		}
+
+	.modal .btn-close {
+		top: 10px;
+		right: 10px;
+	}
+
+	.about-us__two .col-lg-4 .mt {
+		margin-top: -60px;
+	}
+
+	.about-us__two .mt{
+		margin-top: -30px;
+	}
 }
