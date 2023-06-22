@@ -21,9 +21,16 @@ body {
 	padding: 0;
 	width: 100%;
 	font-family: 'GothamPro-Light', sans-serif;
-	background-image: url(../images/bg.png);
+	/* background-image: url(../images/bg.png); */
+}
+
+main {
+	background: url('../images/background_vector.svg'), linear-gradient(90deg, #0A214D 0%, #052955 9.09%, #00325E 18.18%, #003A65 27.27%, #00436D 36.36%, #004B74 45.45%, #00547B 54.55%, #005D81 63.64%, #006587 72.73%, #006E8D 81.82%, #0C7792 90.91%, #1B8097 100%);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	padding-bottom: 125px;
+	transition: .3s all ease;
+	padding-top: 97px;
 }
 
 a,
@@ -249,14 +256,27 @@ a:focus,
 .main-sec {
 	background-image: url(../images/main-bg.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	width: 100%;
+	margin-top: -97px;
+	padding-top: 97px;
+}
+
+.main-sec .header {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.main-sec .header::before {
+	content: none;
 }
 
 .header {
-	position: relative;
-	z-index: 1;
+	transition: .3s all ease;
+	position: fixed;
 	padding: 12px 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 .header::before {
@@ -780,6 +800,10 @@ a:focus,
 /* spheres edn */
 
 /* caceer seris start */
+.career .page-links,
+.career__too .page-links {
+	margin-bottom: 0;
+}
 .career__wrap-main {
 	display: flex;
 	justify-content: space-between;
@@ -852,8 +876,11 @@ a:focus,
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 100px #21BBD7, 0px 0px 50px rgba(33, 187, 215, 0.5), 0px 0px 25px rgba(33, 187, 215, 0.25), 0px 0px 4px rgba(33, 187, 215, 0.01), 0px 0px 4px rgba(33, 187, 215, 0.05), 0px 0px 4px rgba(33, 187, 215, 0.1);
 }
 
-.page-links .page-links__line {
+.career .page-links .page-links__line {
 	height: 63.5px;
+}
+.career__too .page-links .page-links__line{
+height: 60.5%;
 }
 
 /* .page-links .page-links__line-box:nth-child(1) {
@@ -897,9 +924,6 @@ a:focus,
 /* caceer seris end */
 
 /* caceer-too seris start */
-.career__too-main {
-	margin-top: 86px;
-}
 
 .career__title {
 	font-family: 'GothamPro-Bold';
@@ -1414,7 +1438,6 @@ a:focus,
 	background-size: 100% 100%;
 	padding: 50px 0;
 	position: relative;
-	margin-top: 125px;
 }
 
 .footer .footer-top-line {
@@ -1496,10 +1519,13 @@ a:focus,
 }
 
 .footer .footer-nav a {
+	display: inline-block;
 	font-size: 12px;
 	line-height: 110%;
 	color: #F9FDFF;
-	padding: 8px 0;
+}
+.footer .footer-nav li {
+	margin-bottom: 8px;
 }
 
 .footer .footer-bottom {
@@ -1698,6 +1724,23 @@ a:focus,
 }
 
 @media (max-width: 992px) {
+	main {
+		padding-top: 0;
+	}
+	.main-sec {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.header {
+		position: relative;
+	}
+	.pages-link__top a {
+		white-space: nowrap;
+	}
+	.leading .pages-link__top {
+		flex-direction: row;
+		overflow: auto;
+	}
 	.header .header-form__icons {
 		padding: 10px 0 20px 0;
 	}
@@ -2099,8 +2142,9 @@ a:focus,
 	}
 
 	.leading .pages-link__top {
-		flex-direction: column;
-		margin: 30px 0 30px 0;
+		padding: 30px 0 30px 0;
+		flex-direction: row;
+		overflow: auto;
 	}
 
 	.leading .pages-link__top a {

@@ -8,4 +8,14 @@ $(document).ready(function () {
 		$('.accordion-header').not($(this)).removeClass('active');
 		$('.accordion-header').not($(this)).find('.icon').removeClass('down').addClass('up');
 	});
+
+	// stickiy header
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > 1) {
+	// 		$('header, main').addClass("sticky");
+	// 	}
+	// 	else {
+	// 		$('header, main').removeClass("sticky");
+	// 	}
+	// });
 });
